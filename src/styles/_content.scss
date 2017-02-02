@@ -1,0 +1,64 @@
+.content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  margin-left: 60px;
+  margin-right: 60px;
+
+
+   .result {
+      padding: 5px;
+      width: 30vw;
+      height: 80vh;
+      background-color: $background;
+      color: $font;
+      box-shadow: 0 0 4px $shadow;
+      border-style: none;
+      resize: none;
+      overflow-y: auto;
+      -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+      -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+      box-sizing: border-box;         /* Opera/IE 8+ */
+    }
+
+    textarea {
+      @extend .result;
+      padding-top: 18px;
+    }
+
+    textarea:focus {
+      outline: none;
+      box-shadow: 0 0 4px $shadow;
+    }
+
+    pre {
+        white-space: pre-wrap;       /* Since CSS 2.1 */
+        white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+        white-space: -pre-wrap;      /* Opera 4-6 */
+        white-space: -o-pre-wrap;    /* Opera 7 */
+        word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+}
+
+@media only screen and (max-width: 780px) {
+  textarea {
+    padding-bottom: 5px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 7px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+  }
+
+  textarea, .result {
+    padding: 5px;
+    width: 80vw;
+    height: 42vh;
+}
+
+}

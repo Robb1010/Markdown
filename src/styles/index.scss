@@ -1,0 +1,15 @@
+$font: #fff;
+$header: #444;
+$background: #232323;
+$shadow: #111;
+
+body {
+  margin: 0;
+  padding: 0;
+  color: $font;
+  background-color: #2a2a2a;
+  font-family: sans-serif;
+}
+
+@import 'header';
+@import 'content';
